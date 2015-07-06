@@ -15,13 +15,24 @@ body {
 
 .grid {
     margin: 0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px; */
     width: 100%;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+.container {
+    margin: 0 auto;
+    /*max-width: 1200px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .marginrow {
     margin: 0;
@@ -76,11 +87,11 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
     p {
         display: none;
     }
-}
+}*/
 
 hr{
     border-width: 5px;
@@ -107,8 +118,24 @@ hr{
 }
 
 .family { 
-    width: 100%;
+    /*width: 100%;*/
+    max-width: 100%;
+    height: auto;
+
 }
+
+/*.subfamily { 
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    /* we could also use margin-left: auto and margin-right:auto;
+    /*margin-right: auto;
+    margin-left: auto; */
+    /*padding-right: 15px;*/
+ /*   padding: -15px;
+    margin: 10%; */
+/*} */
 
 .ucase {
     text-transform: uppercase;
@@ -118,6 +145,17 @@ hr{
     text-align: right;
 }
 
-.center-align{
+#subrow{
     text-align: center;
 }
+
+#subrow img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
