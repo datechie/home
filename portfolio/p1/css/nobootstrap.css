@@ -2,8 +2,8 @@ body {
     font-family: 'Lato', sans-serif;
     color: #747704;
     font-weight: 300;
-    margin-left: 7%;
-    margin-right: 7%;
+    /*margin-left: 7%;
+    margin-right: 7%;*/
 }
 
 /* {
@@ -14,15 +14,7 @@ body {
 }*/
 
 .grid {
-    margin: 0 auto;
-    /*max-width: 1200px; */
-    width: 100%;
-    /*display: flex;
-    flex-wrap: wrap;*/
-}
-
-.container {
-    margin: 0 auto;
+    margin: 0 40px;
     /*max-width: 1200px; */
     width: 100%;
     display: flex;
@@ -31,12 +23,13 @@ body {
 
 .row {
     width: 100%;
+    margin-left: -3%;
     display: flex;
     flex-wrap: wrap;
 }
 .marginrow {
-    margin: 0;
-    padding: 0;
+    margin-left: 3%;
+    /*padding: 0;*/
 }
 
 .col-1 {
@@ -51,9 +44,9 @@ body {
     width: 25%;
 }
 
-.col-4 {
+/*.col-4 {
     width: 33.33%;
-}
+}*/
 
 .col-5 {
     width: 41.66%;
@@ -87,11 +80,11 @@ body {
     width: 100%;
 }
 
-/*@media only screen and (max-width: 500px) {
-    p {
-        display: none;
-    }
-}*/
+@media only screen and (min-width: 768px) {
+  .col-4 {
+    width: 33.33%;
+  }
+}
 
 hr{
     border-width: 5px;
@@ -152,10 +145,10 @@ hr{
 #subrow img {
   max-width: 100%;
   height: auto;
-  margin-left: auto;
+  margin-left: 3%;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
 
 }
 
