@@ -8,57 +8,57 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />		
+		<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
 		<!--Logo and name section-->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<!-- img src="images/logo.png" alt="Udacity logo"-->
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<img class="title-logo" src="images/udacity-logo.jpg" alt="Udacity logo">
 				</div>
-				<div class="col-md-6 text-right text-uppercase">
+				<div class="col-md-6 col-sm-6 col-xs-12 text-right text-uppercase">
 					<h1 class="title-super text-thin">Umang Vanjara</h1>
 					<h4>FEND to be</h4>	
 				</div>
 			</div>
 			<!-- Straight Line-->
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-sm-12col-xs-12">
 					<hr>
 				</div>
 			</div>
 			<!-- Big Image -->
 			<div class="row">
-				<div class="col-md-12">
-				<img class="img-responsive family" src="images/family2.jpg" alt="My Family">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+				<img class="img-responsive family" src="images/family.jpg" data-toggle="modal" data-target="#familymodal" alt="My Family">
 				</div>
 			</div>
 			<!-- Featured Work -->
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<h2 class="text-muted">Featured Work</h2>
 				</div>
 			</div>	
 			<!-- 3 Sub sections -->
 			<div class="row text-center">
-				<div class="col-md-4">
-					<!-- <img class="img-responsive" src="http://placehold.it/350X350" alt="Son"> -->
-					<img class="img-responsive" src="images/son2.jpg" alt="Son">					
-					<h3 class="text-uppercase">Son</h3>
-					<p>https://github.com/udacity/appify</p>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<img class="img-responsive center-block" src="images/son.jpg" data-toggle="modal" data-target="#sonmodal" alt="Son">
+					<article>
+						<h3 class="text-uppercase">Son</h3>
+						<p>https://github.com/udacity/appify</p>
+					</article>					
 				</div>
-				<div class="col-md-4">
-					<!-- <img class="img-responsive" src="http://placehold.it/350X350" alt="Son"> -->
-					<img class="img-responsive" src="images/daughter.jpg" alt="Daughter">					
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<img class="img-responsive center-block" src="images/daughter.jpg" data-toggle="modal" data-target="#daughtermodal" alt="Daughter">					
 					<h3 class="text-uppercase">Daughter</h3>
 					<p>https://github.com/udacity/sunflower</p>
 				</div>
-				<div class="col-md-4">
-					<!-- <img class="img-responsive" src="http://placehold.it/350X350" alt="Son"> -->
-					<img class="img-responsive" src="images/mom_dad_350_350.jpg" alt="Mom & Dad">					
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<img class="img-responsive center-block" src="images/mom_dad.jpg" data-toggle="modal" data-target="#momdadmodal" alt="Mom & Dad">					
 					<h3 class="text-uppercase">Mom & Dad</h3>
 					<p>https://github.com/udacity/bokeh</p>
 				</div>
@@ -66,5 +66,79 @@
 		</div>		
 
 
+		<!-- Modals -->
+		<!-- Family pic modal -->
+		<div class="modal fade" id="familymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h4 class="modal-title" id="myModalLabel">My First Project</h4>
+      				</div>
+      				<div class="modal-body">
+        				<img class="img-responsive" src="images/family.jpg">
+        					This was my first project in this class. I learned a lot about HTML and CSS. By the way, this is my family pic!
+  					</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+		<!-- Son Pic Modal -->
+		<div class="modal fade" id="sonmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h4 class="modal-title" id="myModalLabel">My First Project</h4>
+      				</div>
+      				<div class="modal-body text-center">
+        				<img class="img-responsive center-block" src="images/son.jpg">
+        					Hello World!!
+  					</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+		<!-- Daughter Pic Modal -->
+		<div class="modal fade" id="daughtermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h4 class="modal-title" id="myModalLabel">My First Project</h4>
+      				</div>
+      				<div class="modal-body text-center">
+        				<img class="img-responsive center-block" src="images/daughter.jpg">
+        					I am a Cutie!!
+  					</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+		<!-- Mom & Dad Pic Modal -->
+		<div class="modal fade" id="momdadmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h4 class="modal-title" id="myModalLabel">My First Project</h4>
+      				</div>
+      				<div class="modal-body text-center">
+        				<img class="img-responsive center-block" src="images/mom_dad.jpg">
+        					Mom and Dad in the desert!!
+  					</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
 	</body>
+
 </html>

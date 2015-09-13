@@ -2,11 +2,11 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: #747704;
 	font-weight: 300;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 hr{
-	border-width: 5px;	
+	border-height: 5px;	
 }
 .text-muted{
 	color: #BCBBBB;
